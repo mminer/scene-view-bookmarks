@@ -14,4 +14,4 @@ Drop *SceneViewBookmarker.cs* into your Unity project. Press <kbd>option / alt</
 
 After recalling a bookmark, you can return to the former scene view by pressing <kbd>shift</kbd> <kbd>0</kbd> (think of this as an undo of sorts).
 
-For more details give [this blog post](http://matthewminer.com/2018/01/24/unity-scene-view-bookmarks) a read.
+For more details give [this blog post](http://matthewminer.com/2018/01/25/unity-scene-view-bookmarks) a read.
