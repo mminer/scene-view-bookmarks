@@ -3,6 +3,8 @@
 Unity editor extension to bookmark scene views. Save the scene view camera's
 current position then return to it later.
 
+![Screenshot](Documentation~/Screenshot.gif)
+
 Inspired by [camera bookmarks](https://www.youtube.com/watch?v=_i-d5OZmhWI) in
 Unreal Engine.
 
@@ -18,6 +20,8 @@ Unity 2019.4 or later. The scene view overlay only appears in 2021.2 and up.
 2. Click the + button in the top-left corner
 3. Choose "Add package from git URL..."
 4. Enter https://github.com/mminer/scene-view-bookmarks.git
+
+![UPM Installation](Documentation~/Installation.gif)
 
 
 ## Using
@@ -36,3 +40,5 @@ Scene View Bookmarks > Return to Previous View* or by pressing <kbd>shift</kbd>
 Alternatively if you use 2021.2 or later you can access bookmarks from a
 dropdown in the scene view. Click the ⋮ button in the top-right of the Scene
 window and choose *Overlays > Scene View Bookmarks*.
+
+![Scene Overlay](Documentation~/SceneOverlay.gif)
