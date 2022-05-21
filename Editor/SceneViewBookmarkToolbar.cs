@@ -1,4 +1,4 @@
-#if UNITY_2021_3_OR_NEWER
+#if UNITY_2021_2_OR_NEWER
 using UnityEditor;
 using UnityEditor.Overlays;
 using UnityEditor.Toolbars;
@@ -23,13 +23,13 @@ namespace SceneViewBookmarks
             text = "Bookmarks";
             clicked += ShowDropdown;
         }
-        
+
         static void HandleMoveToBookmark(object userData)
         {
             var slot = (int)userData;
             SceneViewBookmarkManager.MoveToBookmark(slot);
         }
-        
+
         static void HandleSetBookmark(object userData)
         {
             var slot = (int)userData;
@@ -43,7 +43,7 @@ namespace SceneViewBookmarks
             for (var slot = 1; slot <= 9; slot++)
             {
                 var content = new GUIContent($"Move to Bookmark {slot} #{slot}");
-                
+
                 if (SceneViewBookmarkManager.HasBookmark(slot))
                 {
                     menu.AddItem(content, false, HandleMoveToBookmark, slot);
@@ -53,7 +53,7 @@ namespace SceneViewBookmarks
                     menu.AddDisabledItem(content);
                 }
             }
-            
+
             menu.AddSeparator(string.Empty);
 
             var returnToPreviousViewContent = new GUIContent("Return to Previous View #0");
