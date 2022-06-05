@@ -5,6 +5,9 @@ namespace SceneViewBookmarks
 {
     static class SceneViewBookmarkManager
     {
+        public const string iconPath = "Packages/com.matthewminer.sceneviewbookmarks/Icons/SceneViewBookmarksIcon.png";
+        public const int maxBookmarkCount = 9;
+
         const int previousViewSlot = 0;
         
         public static bool hasPreviousView => HasBookmark(previousViewSlot);

@@ -7,7 +7,7 @@ using UnityEngine;
 namespace SceneViewBookmarks
 {
     [Overlay(typeof(SceneView), "Scene View Bookmarks")]
-    [Icon("Packages/com.matthewminer.sceneviewbookmarks/Icons/SceneViewBookmarksIcon.png")]
+    [Icon(SceneViewBookmarkManager.iconPath)]
     class SceneViewBookmarkToolbarOverlay : ToolbarOverlay
     {
         SceneViewBookmarkToolbarOverlay() : base(SceneViewBookmarkToolbarDropdown.id) {}
@@ -40,7 +40,7 @@ namespace SceneViewBookmarks
         {
             var menu = new GenericMenu();
 
-            for (var slot = 1; slot <= 9; slot++)
+            for (var slot = 1; slot <= SceneViewBookmarkManager.maxBookmarkCount; slot++)
             {
                 var content = new GUIContent($"Move to Bookmark {slot} #{slot}");
 
@@ -69,7 +69,7 @@ namespace SceneViewBookmarks
 
             menu.AddSeparator(string.Empty);
 
-            for (var slot = 1; slot <= 9; slot++)
+            for (var slot = 1; slot <= SceneViewBookmarkManager.maxBookmarkCount; slot++)
             {
                 menu.AddItem(new GUIContent($"Set Bookmark {slot} &#{slot}"), false, HandleSetBookmark, slot);
             }
