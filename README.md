@@ -37,8 +37,15 @@ After recalling a bookmark, restore the former scene view using *Window > Scene
 View Bookmarks > Return to Previous View* or by pressing <kbd>shift</kbd>
 <kbd>0</kbd>. Think of this as an undo of sorts.
 
-Alternatively if you use 2021.2 or later you can access bookmarks from a
-dropdown in the Scene window. Click the ⋮ button in the top-right of the window
-and choose *Overlays > Scene View Bookmarks*.
+### Scene Overlays
+
+If you use 2021.2 or later you can access bookmarks from a dropdown in the Scene
+window. Click the ⋮ button in the top-right of the window and choose *Overlays >
+Scene View Bookmarks*.
 
 ![Scene Overlay](Documentation~/SceneOverlay.gif)
+
+### Search
+
+Use the `svb:` filter in Unity's built-in Search window for yet another way to
+access bookmarks.
