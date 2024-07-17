@@ -1,4 +1,8 @@
 {
+  "author": {
+    "name": "Matthew Miner",
+    "email": "matthew@matthewminer.com"
+  },
   "description": "Bookmark scene views.",
   "displayName": "Scene View Bookmarks",
   "name": "com.matthewminer.sceneviewbookmarks",
