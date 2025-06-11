@@ -16,12 +16,33 @@ Unity 2019.4 or later. The scene overlay only appears in 2021.2 and up.
 
 ## Installing
 
-1. Open *Window > Package Manager*
-2. Click the + button in the top-left corner
-3. Choose "Add package from git URL..."
-4. Enter https://github.com/mminer/scene-view-bookmarks.git
+Add the package to your project via
+[UPM](https://docs.unity3d.com/Manual/upm-ui.html) using the Git URL:
+
+```
+https://github.com/mminer/scene-view-bookmarks.git
+```
+
+1. Open the Package Manager window in Unity (*Window > Package Manager*)
+2. Click the "+" button in the top-left corner
+3. Select "Install package from git URL..."
+4. Enter the above Git URL
+5. Click "Install"
 
 ![UPM Installation](Documentation~/Installation.gif)
+
+Alternatively, add the following line to your `Packages/manifest.json` file:
+
+```json
+{
+  "dependencies": {
+    "com.matthewminer.scene-view-bookmarks": "https://github.com/mminer/scene-view-bookmarks.git",
+    ...
+  }
+}
+```
+
+You can also clone the repository and point UPM to your local copy.
 
 
 ## Using
